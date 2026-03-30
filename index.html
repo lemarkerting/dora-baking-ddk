@@ -4,49 +4,159 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dora Baking DDK</title>
-<link rel="stylesheet" href="styles.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff8f0;
+}
+
+/* NAVBAR */
+nav {
+    background: #8B4513;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1509440159596-0249088772ff') center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    background: #ff7b54;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* PRODUCTS */
+.container {
+    padding: 40px 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.price {
+    color: #8B4513;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>Dora Baking DDK</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
 
 <section class="hero">
-  <h2>Freshly Baked Happiness Daily</h2>
-  <p>Scones, Bread, Cakes & More – Made With Love</p>
-  <a href="shop.html" class="btn">Order Now</a>
+    <h1>Freshly Baked Happiness Daily</h1>
+    <p>Scones, Bread, Cakes & More – Made With Love</p>
+    <a href="#" class="btn">Order Now</a>
 </section>
 
-<section class="products">
-  <h2>Popular Items</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="images/scones.jpg">
-      <h3>Scones</h3>
-      <p>R25</p>
+<section class="container">
+    <h2>Popular Items</h2>
+
+    <div class="products">
+
+        <!-- SCONES -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908554007-7c7b6c2a444d">
+            <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35">
+            <img src="https://images.unsplash.com/photo-1587731535062-1c2c4b63a16c">
+            <h3>Scones</h3>
+            <p class="price">R25</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- BREAD -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec">
+            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73">
+            <h3>Bread</h3>
+            <p class="price">R30</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- CUPCAKES -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c">
+            <img src="https://images.unsplash.com/photo-1587248720327-8eb72564be1e">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+            <h3>Cupcakes</h3>
+            <p class="price">R15</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
     </div>
-    <div class="card">
-      <img src="images/bread.jpg">
-      <h3>Bread</h3>
-      <p>R30</p>
-    </div>
-    <div class="card">
-      <img src="images/cupcakes.jpg">
-      <h3>Cupcakes</h3>
-      <p>R15</p>
-    </div>
-  </div>
 </section>
 
 <footer>
-  <p>© 2026 Dora Baking DDK</p>
+    <p>© 2026 Dora Baking DDK</p>
 </footer>
 
 </body>
